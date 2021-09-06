@@ -21,11 +21,11 @@
 
 #maze>.cell:hover{
     background-color: cyan;
-    border: 2px solid blue;
+    border: 2px solid rgb(64, 64, 255);
 }
 
 .blockedCell{
-    background-color: black;
+    background-color: black !important;
 }
 
 .srcCell{
@@ -37,6 +37,6 @@
 }
 
 .pathCell{
-    background-color: skyblue;
+    background-color: rgb(64, 179, 224)
     /* border: 2px solid white; */
 }

@@ -1,3 +1,4 @@
+console.log("script.js: Hello");
 var rowSize = 50;
 var colSize = 80;
 
@@ -5,23 +6,17 @@ var cellSize = '20px';
 
 var takeInput = false;
 
-function getNum(coord, row, col) {
-    let x = coord[0];
-    let y = coord[1];
-    let num = x * col + y;
-    return num;
-}
-
 function createMaze() {
 
     for (let i = 0; i < rowSize; i++) {
         for (let j = 0; j < colSize; j++) {
             let coord = [i, j];
-            let num = getNum(coord, rowSize, colSize);
+            // let num = getNum(coord, rowSize, colSize);
 
             let newCell = $('<div></div>', {
                 class: 'cell',
-                "data-cell": num
+                "data-x": i,
+                "data-y": j
             });
             newCell.appendTo('#maze');
         }
