@@ -121,7 +121,7 @@ function chooseDestinationCell() {
 }
 
 
-$('body').on('click', function () {
+$('#cellType').on('click', function () {
     let optionSelected = $('#cellType').val();
     // console.log("optionSelected = ", optionSelected);
     takeInput = false;
