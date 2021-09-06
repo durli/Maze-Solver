@@ -7,8 +7,10 @@
     <title>Maze Solver</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="input-container">
+        <label for="cellType">Choose Cell type: </label>
         <select name="cellType" id="cellType">
             <option value="block">Blocked Cells</option>
             <option value="src">Source Cell</option>
@@ -20,6 +22,7 @@
         <!-- <div class="cell"></div> -->
     </section>
 </body>
+
 <script src="/jquery-3.6.0.js"></script>
 <script src="script.js"></script>
 <script src="/bfs.js"></script>

@@ -5,8 +5,26 @@
 }
 
 #input-container{
-    height: 50px;
-    padding: 20px;
+    height: 80px;
+    padding: 20px 40px;
+    font-size: 1.1rem;
+}
+
+#input-container>label{
+    font-family: sans-serif;
+}
+
+#input-container select{
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+#submit-btn{
+    padding: 5px;
+    font-size: 1.1rem;
+    width: 100px;
 }
 
 #maze{
@@ -38,5 +56,8 @@
 
 .pathCell{
     background-color: rgb(64, 179, 224)
-    /* border: 2px solid white; */
+}
+
+.visitedCell{
+    background-color: skyblue;
 }
