@@ -1,63 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#input-container{
-    height: 80px;
-    padding: 20px 40px;
-    font-size: 1.1rem;
+#input-container {
+  min-height: 80px;
+  padding: 20px 40px;
+  font-size: 1.1rem;
 }
 
-#input-container>label{
-    font-family: sans-serif;
+#input-container > label {
+  font-family: sans-serif;
 }
 
-#input-container select{
-    padding: 5px;
-    font-size: 1.1rem;
-    margin-right: 100px;
-    margin-left: 20px;
+#input-container select {
+  padding: 5px;
+  font-size: 1.1rem;
+  margin-right: 100px;
+  margin-left: 20px;
 }
 
-#submit-btn{
-    padding: 5px;
-    font-size: 1.1rem;
-    width: 100px;
+#submit-btn {
+  padding: 5px;
+  font-size: 1.1rem;
+  width: 100px;
 }
 
-#maze{
-    display: grid;
+#maze {
+  display: grid;
 }
 
-.cell{
-    width: 20px;
-    height: 20px;
-    border: 2px solid brown;
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 2px solid brown;
 }
 
-#maze>.cell:hover{
-    background-color: cyan;
-    border: 2px solid rgb(64, 64, 255);
+#maze > .cell:hover {
+  background-color: cyan;
+  border: 2px solid rgb(64, 64, 255);
 }
 
-.blockedCell{
-    background-color: black !important;
+.blockedCell {
+  background-color: black !important;
 }
 
-.srcCell{
-    background-color: green !important;
+.srcCell {
+  background-color: green !important;
 }
 
-.destCell{
-    background-color: red !important;
+.destCell {
+  background-color: red !important;
 }
 
-.pathCell{
-    background-color: rgb(64, 179, 224)
+.pathCell {
+  background-color: rgb(64, 179, 224);
 }
 
-.visitedCell{
-    background-color: skyblue;
+.visitedCell {
+  background-color: skyblue;
 }
