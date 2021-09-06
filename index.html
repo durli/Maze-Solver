@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="input-container">
+        <select name="cellType" id="cellType">
+            <option value="block">Blocked Cells</option>
+            <option value="src">Source Cell</option>
+            <option value="dest">Destination Cell</option>
+          </select>
+          <button id="submit-btn">Solve</button>
+    </section>
+    <section id="maze">
+        <!-- <div class="cell"></div> -->
+    </section>
+</body>
+<script src="/jquery-3.6.0.js"></script>
+<script src="/script.js"></script>
+<script src="/bfs.js"></script>
+</html>

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#input-container{
+    height: 50px;
+    padding: 20px;
+}
+
+#maze{
+    display: grid;
+}
+
+.cell{
+    width: 20px;
+    height: 20px;
+    border: 2px solid brown;
+}
+
+#maze>.cell:hover{
+    background-color: cyan;
+    border: 2px solid blue;
+}
+
+.blockedCell{
+    background-color: black;
+}
+
+.srcCell{
+    background-color: green !important;
+}
+
+.destCell{
+    background-color: red !important;
+}
+
+.pathCell{
+    background-color: skyblue;
+    /* border: 2px solid white; */
+}
