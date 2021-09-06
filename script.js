@@ -121,8 +121,9 @@ function chooseDestinationCell() {
 }
 
 
-$('#cellType').on('click', function () {
+$('body').on('click', function () {
     let optionSelected = $('#cellType').val();
+    // console.log("optionSelected = ", optionSelected);
     takeInput = false;
     if (optionSelected == 'block') {
         chooseBlockedCells();
