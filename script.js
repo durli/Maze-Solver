@@ -120,8 +120,7 @@ function chooseDestinationCell() {
     });
 }
 
-
-$('#cellType').on('click', function () {
+function checkCellSelected(){
     let optionSelected = $('#cellType').val();
     // console.log("optionSelected = ", optionSelected);
     takeInput = false;
@@ -132,4 +131,8 @@ $('#cellType').on('click', function () {
     } else if (optionSelected == 'dest') {
         chooseDestinationCell();
     }
-});
+}
+
+$('#cellType').on('click', checkCellSelected);
+
+setTimeout(checkCellSelected, 1);
