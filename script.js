@@ -111,7 +111,7 @@ function chooseDestinationCell() {
         cell.addEventListener('click', A);
     }
 
-    $('#cellType').on('click', function () {
+    $('#cellType>option').on('click', function () {
         for (let i = 0; i < cells.length; i++) {
             let cell = cells[i];
             cell.removeEventListener('click', A);
